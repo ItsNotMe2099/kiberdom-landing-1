@@ -1,0 +1,58 @@
+@import "styles/index";
+
+.root {
+    display: flex;
+    @include list(10px, true);
+    padding: 0 15px;
+}
+
+.number {
+    display: flex;
+    align-self: flex-start;
+}
+
+.rects {
+    display: flex;
+    flex-direction: column;
+    @include list(15px, false);
+    align-self: center;
+}
+
+.yellow {
+    width: 6px;
+    height: 6px;
+    background: #F0B900;
+}
+
+.brown {
+    width: 7px;
+    height: 7px;
+    background: #784929;
+}
+
+.white {
+    align-self: center;
+    width: 12px;
+    height: 12px;
+    background-color: #E9E8DD;
+    display: flex;
+    align-items: center;
+    font-size: 9.7px;
+    font-weight: 500;
+    line-height: 12.61px;
+    text-align: center;
+    justify-content: center;
+}
+
+.desc {
+    font-size: 11.26px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: left;
+    color: #E9E8DD;
+    align-self: center;
+
+    span {
+        font-weight: 600;
+    }
+}

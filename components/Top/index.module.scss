@@ -1,0 +1,27 @@
+@import "styles/index";
+
+.root {
+    height: 575px;
+    position: relative;
+    z-index: 1;
+    background: url('../../public/img/bg.png') no-repeat;
+    background-size: cover;
+
+    @include mq($SmPhoneWidth + 1, max) {
+        background-size: contain;
+    }
+}
+
+.text {
+    padding-left: 30px;
+}
+
+.logo {
+    position: absolute;
+    top: 455px;
+    right: 25px;
+
+    @include mq($SmPhoneWidth + 1, max) {
+        top: 365px;
+    }
+}

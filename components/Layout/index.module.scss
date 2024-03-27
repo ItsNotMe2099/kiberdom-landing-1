@@ -1,0 +1,13 @@
+@import "styles/index";
+
+.root {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #E9E8DD;
+}
+
+.container {
+  position: relative;
+}

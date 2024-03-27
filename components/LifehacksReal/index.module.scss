@@ -1,0 +1,73 @@
+@import "styles/index";
+
+.root {
+    position: relative;
+    top: -200px;
+
+    @include mq($SmPhoneWidth + 1, max) {
+        top: -328px;
+    }
+}
+
+.bg {
+    position: relative !important;
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.wrapper {
+    position: absolute;
+    top: 8%;
+    transform: skewY(-10deg);
+    padding: 0 45px;
+    z-index: 2;
+    left: -25px;
+}
+
+.top {
+    font-family: 'Denistina';
+    font-size: 23.48px;
+    font-weight: 400;
+    line-height: 12.45px;
+    letter-spacing: -0.025em;
+    text-align: left;
+    color: #E9E8DD;
+}
+
+.bottom {
+    font-family: 'Denistina';
+    font-size: 33.27px;
+    font-weight: 400;
+    line-height: 17.63px;
+    letter-spacing: -0.025em;
+    text-align: left;
+    right: -97px;
+    position: relative;
+    color: #E9E8DD;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    @include list(15px, false);
+    position: absolute;
+    top: 160px;
+    z-index: 1;
+
+    @include mq($SmPhoneWidth + 1, max) {
+        top: 120px;
+    }
+}
+
+.vase {
+    height: 291px !important;
+    width: auto !important;
+    left: auto !important;
+    z-index: 1;
+    top: 90px !important;
+}
