@@ -1,0 +1,24 @@
+@import "styles/index";
+
+.root {
+    position: relative;
+}
+
+.bg {
+    height: auto !important;
+    position: relative !important;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    top: 40%;
+    padding: 0 38px;
+    @include list(16px, true);
+    align-items: center;
+}
+
+.logo {
+    width: 138px;
+    height: 23px;
+}
