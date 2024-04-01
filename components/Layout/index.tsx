@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 import Footer from '../Footer'
 import styles from './index.module.scss'
 import { useResize } from '../hooks/useResize'
-import Header from '../Header'
+import FooterDesktop from '../FooterDesktop'
 
 interface Props {
   children?: ReactElement | ReactElement[]
@@ -14,11 +14,10 @@ export default function Layout(props: Props) {
 
   return (
     <div className={styles.root}>
-      {!isPhoneWidth && <Header />}
       <div className={styles.container}>
         {props.children}
       </div>
-      <Footer />
+      {isPhoneWidth ? <Footer /> : <FooterDesktop />}
     </div>
   )
 }

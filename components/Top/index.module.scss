@@ -12,6 +12,15 @@
     }
 }
 
+.desktop {
+    height: auto;
+    background: none;
+
+    img {
+        height: auto !important;
+    }
+}
+
 .text {
     padding-left: 30px;
 }
