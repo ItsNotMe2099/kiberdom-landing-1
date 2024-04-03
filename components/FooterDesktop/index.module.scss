@@ -10,32 +10,33 @@
 }
 
 .top {
-    background: url('../../public/img/footer-desktop-bg.png') no-repeat;
     background-size: cover;
-    padding: 30px 0;
+    padding: 30px 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     @include list(100px, true);
+    height: 574px;
 
-    @include mq($TabletWidth, max) {
-        @include list(50px, true);
+    @include mq($LDesktopWidth, max) {
+        height: 387px;
+    }
+
+    @include mq($SmDesktopWidth, max) {
+        padding-right: 0;
     }
 }
 
 .bg2 {
-    height: auto !important;
     position: relative !important;
-}
+    height: 248px !important;
 
-.house {
-    img {
-        width: auto !important;
-        position: relative !important;
+    @include mq($LDesktopWidth, max) {
+        height: 194px !important;
     }
 
-    @include mq($TabletWidth, max) {
-        display: none;
+    @include mq($SmDesktopWidth, max) {
+        height: 151px;
     }
 }
 
@@ -48,8 +49,14 @@
     color: #333333;
     font-size: 14px;
     z-index: 1;
-    position: relative;
+    position: absolute;
+    right: 100px;
     min-width: 422px;
+
+    @include mq($SmDesktopWidth, max) {
+        position: absolute;
+        right: 0;
+    }
 }
 
 .address {
