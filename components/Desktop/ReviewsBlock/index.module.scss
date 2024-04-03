@@ -1,0 +1,52 @@
+@import "styles/index";
+
+.root {
+    padding: 100px 40px;
+    background-color: $main;
+    display: flex;
+    flex-direction: column;
+    @include list(50px, false);
+}
+
+.content {
+    padding: 50px 0;
+    padding-top: 100px;
+    border-top: 1px solid $brown;
+}
+
+.title {
+    color: #3e3a39;
+    font-size: 70px;
+    line-height: 74%;
+    letter-spacing: -0.03em;
+    text-transform: lowercase;
+    text-align: center;
+    color: #3e3a39;
+    font-family: 'Denistina';
+}
+
+.reviews {
+    padding: 50px 0;
+    display: flex;
+    @include list(50px, true);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    @include list(50px, false);
+    align-items: center;
+
+    img {
+        width: 53px !important;
+        height: 53px !important;
+        position: relative !important;
+    }
+}
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+}

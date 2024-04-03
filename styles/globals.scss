@@ -47,6 +47,7 @@ body {
   max-width: 100%;
   background-size: cover;
   color: #26324A;
+  background-color: $main;
 
   &.modal-open {
     overflow-y: hidden;

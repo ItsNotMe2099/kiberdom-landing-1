@@ -11,10 +11,16 @@
     @include mq($SmPhoneWidth + 1, max) {
         background-size: contain;
     }
+
+
 }
 
 .desktop {
     height: 100vh;
+
+    @include mq($SmDesktopWidth + 1, max) {
+        height: 1100px;
+    }
 
     .text {
         top: 70px;
@@ -74,7 +80,7 @@
     justify-content: space-between;
 
     .text {
-        color: $main;
+        color: #f2e9db;
         top: 0;
         padding-left: 0;
     }

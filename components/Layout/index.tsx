@@ -1,7 +1,6 @@
 import { ReactElement } from 'react'
 import styles from './index.module.scss'
 import { useResize } from '../hooks/useResize'
-import FooterDesktop from '../Desktop/FooterDesktop'
 import Footer from '../Mobile/Footer'
 
 interface Props {
@@ -17,7 +16,7 @@ export default function Layout(props: Props) {
       <div className={styles.container}>
         {props.children}
       </div>
-      {isPhoneWidth ? <Footer /> : <FooterDesktop />}
+      {isPhoneWidth && <Footer />}
     </div>
   )
 }

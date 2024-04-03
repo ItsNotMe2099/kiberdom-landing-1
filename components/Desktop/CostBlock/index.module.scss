@@ -1,0 +1,106 @@
+@import "styles/index";
+
+.root {
+    background: url('../../../public/img/unique-bg.png') no-repeat;
+    position: relative;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    height: 425px;
+    background-size: cover;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 74%;
+    letter-spacing: -0.03em;
+    text-transform: lowercase;
+    color: #f3eadc;
+    font-family: 'Denistina';
+}
+
+.gift {
+    font-weight: 400;
+    font-size: 18px;
+    color: #1d1d1d;
+    margin-top: 10px;
+}
+
+.info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    @include list(10px, false);
+
+    .gift:first-child {
+        margin-top: 0;
+    }
+}
+
+.items {
+    display: flex;
+    @include list(50px, true);
+    margin-top: 50px;
+    justify-content: center;
+
+    @include mq($LDesktopWidth, max) {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
+.item {
+    box-shadow: 0 4px 40px 0 #c6afac;
+    background-color: $main;
+    height: 386px;
+    padding: 40px;
+    padding-top: 100px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include mq($LDesktopWidth, max) {
+        height: 463px;
+        width: 360px;
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    @include list(30px, false);
+}
+
+.cost {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 90%;
+    color: #1d1d1d;
+}
+
+.section {
+    display: flex;
+    @include list(8px, true);
+    align-items: center;
+}
+
+.square {
+    width: 8px;
+    height: 8px;
+    background-color: $yellow;
+}
+
+.btns {
+    display: flex;
+    @include list(10px, true);
+
+    @include mq($LDesktopWidth, max) {
+        flex-direction: column;
+        @include list(10px, false);
+        align-items: center;
+    }
+}

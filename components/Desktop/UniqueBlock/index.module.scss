@@ -1,0 +1,94 @@
+@import "styles/index";
+
+.root {
+    background: url('../../../public/img/unique-bg.png') no-repeat;
+    position: relative;
+    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    @include list(40px, false);
+    height: 601px;
+    background-size: cover;
+
+    @include mq($LDesktopWidth + 1, max) {
+        height: 588px;
+    }
+
+    @include mq($SmDesktopWidth + 1, max) {
+        height: 537px;
+    }
+
+    h2 {
+        position: relative;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 90%;
+        color: $light;
+        margin: 0;
+    }
+
+    img {
+        height: auto !important;
+        z-index: 2;
+        position: relative !important;
+        top: -7px !important;
+    }
+}
+
+.number {
+    position: absolute;
+    font-family: 'Denistina';
+    color: #FFEF6B;
+    font-size: 86px;
+    right: 0;
+
+    @include mq($SmDesktopWidth + 1, max) {
+        top: 50px;
+    }
+
+    @include mq($TabletWidth + 1, max) {
+        display: none;
+    }
+}
+
+.security {
+    color: $light;
+    font-size: 18px;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    @include list(15px, false);
+    width: 753px;
+
+    @include mq($SmDesktopWidth + 1, max) {
+        width: 599px;
+    }
+
+    @include mq($TabletWidth + 1, max) {
+        width: 100%;
+    }
+}
+
+.bottom {
+    font-weight: 600;
+    font-size: 18px;
+    color: $light;
+    position: relative;
+    z-index: 3;
+}
+
+.btn {
+    margin-left: 40px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    margin: 0 -40px;
+}

@@ -8,6 +8,7 @@ import LifehacksDigital from '@/components/Mobile/LifehacksDigital'
 import LifehacksReal from '@/components/Mobile/LifehacksReal'
 import LampBlock from '@/components/Desktop/LampBlock'
 import GalleryBlock from '@/components/Desktop/GalleryBlock'
+import UniqueBlock from '@/components/Desktop/UniqueBlock'
 
 export default function IndexPage() {
 
@@ -19,6 +20,7 @@ export default function IndexPage() {
       <Top />
       <>{!isPhoneWidth && <LampBlock />}</>
       <>{!isPhoneWidth && <GalleryBlock />}</>
+      <>{!isPhoneWidth && <UniqueBlock />}</>
       <>{isPhoneWidth && <WhatToDo />}</>
       <>{isPhoneWidth && <LifehacksDigital />}</>
       <>{isPhoneWidth && <LifehacksReal />}</>

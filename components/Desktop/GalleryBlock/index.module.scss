@@ -3,6 +3,10 @@
 .root {
     padding: 100px 88px;
     background-color: $main;
+
+    @include mq($VSmDesktopWidth + 1, max) {
+        padding: 100px 30px;
+    }
 }
 
 .content {
@@ -28,6 +32,10 @@
 .first {
     height: auto !important;
     width: auto !important;
+
+    @include mq($VSmDesktopWidth + 1, max) {
+        width: 100% !important;
+    }
 }
 
 .second {
