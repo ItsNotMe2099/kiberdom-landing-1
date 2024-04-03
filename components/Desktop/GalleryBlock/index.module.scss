@@ -1,37 +1,36 @@
 @import "styles/index";
 
 .root {
-    padding: 0 40px;
-    display: flex;
-    flex-direction: column;
-    height: 454px;
-    justify-content: center;
-
-    @include mq($SmDesktopWidth + 1, max) {
-        height: 100vh;
-    }
+    padding: 100px 88px;
+    background-color: $main;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    @include list(30px, false);
-    width: 813px;
+    box-shadow: 0 6px 64px 0 #624b48, 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
-    @include mq($LDesktopWidth + 1, max) {
-        width: 624px;
-    }
-
-    @include mq($SmDesktopWidth + 1, max) {
-        width: 536px;
-    }
-
-    @include mq($TabletWidth + 1, max) {
-        width: 100%;
+    .row:last-child {
+        margin-top: 16px;
     }
 }
 
-.text {
-    font-size: 18px;
-    color: $white;
+.row {
+    display: flex;
+    @include list(16px, true);
+
+    img {
+        position: relative !important;
+        box-shadow: 0 6px 64px 0 #624b48, 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+.first {
+    height: auto !important;
+    width: auto !important;
+}
+
+.second {
+    height: auto !important;
+    width: 33% !important;
 }

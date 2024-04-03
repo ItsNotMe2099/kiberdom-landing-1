@@ -1,5 +1,6 @@
 import { useResize } from '@/components/hooks/useResize'
 import styles from './index.module.scss'
+import Image from 'next/image'
 
 interface Props {
   className?: string
@@ -9,24 +10,19 @@ export default function GalleryBlock(props: Props) {
 
   const { isPhoneWidth, isSmDesktopWidth, isLDesktopWidth, isVLDesktopWidth } = useResize()
 
-  const getBg = () => {
-    if (isSmDesktopWidth) {
-      return '/img/lamp-block-bg-1024.png'
-    }
-    else if (isLDesktopWidth) {
-      return '/img/lamp-block-bg-1440.png'
-    }
-    else if (isVLDesktopWidth) {
-      return '/img/lamp-block-bg-1920.png'
-    }
-    else {
-      return ''
-    }
-  }
-
   return (
     <div className={styles.root}>
-      
+      <div className={styles.content}>
+        <div className={styles.row}>
+          <Image className={styles.first} src={'/img/gallery/1.png'} alt='' fill />
+          <Image className={styles.second} src={'/img/gallery/2.png'} alt='' fill />
+        </div>
+        <div className={styles.row}>
+          <Image src={'/img/gallery/3.png'} alt='' fill />
+          <Image src={'/img/gallery/4.png'} alt='' fill />
+          <Image src={'/img/gallery/5.png'} alt='' fill />
+        </div>
+      </div>
     </div>
   )
 }

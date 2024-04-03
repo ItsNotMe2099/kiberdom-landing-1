@@ -7,6 +7,7 @@ import Header from '@/components/Desktop/Header'
 import LifehacksDigital from '@/components/Mobile/LifehacksDigital'
 import LifehacksReal from '@/components/Mobile/LifehacksReal'
 import LampBlock from '@/components/Desktop/LampBlock'
+import GalleryBlock from '@/components/Desktop/GalleryBlock'
 
 export default function IndexPage() {
 
@@ -17,6 +18,7 @@ export default function IndexPage() {
       <>{!isPhoneWidth && <Header />}</>
       <Top />
       <>{!isPhoneWidth && <LampBlock />}</>
+      <>{!isPhoneWidth && <GalleryBlock />}</>
       <>{isPhoneWidth && <WhatToDo />}</>
       <>{isPhoneWidth && <LifehacksDigital />}</>
       <>{isPhoneWidth && <LifehacksReal />}</>
