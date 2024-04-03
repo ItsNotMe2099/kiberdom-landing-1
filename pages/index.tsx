@@ -1,6 +1,6 @@
 import Top from '@/components/Top'
 //import styles from './index.module.scss'
-import WhatToDo from '@/components/WhatToDo'
+import WhatToDo from '@/components/Mobile/WhatToDo'
 import Layout from '@/components/Layout'
 import { useResize } from '@/components/hooks/useResize'
 import Header from '@/components/Desktop/Header'

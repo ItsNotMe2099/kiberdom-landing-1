@@ -3,10 +3,6 @@
 .root {
     position: relative;
     top: -192px;
-
-    @include mq($SmPhoneWidth + 1, max) {
-        top: -270px;
-    }
 }
 
 .bg {

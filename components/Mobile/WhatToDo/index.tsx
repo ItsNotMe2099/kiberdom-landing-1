@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import QuestionSvg from '../svg/QuestionSvg'
+import QuestionSvg from '../../svg/QuestionSvg'
 import styles from './index.module.scss'
-import ArrowSvg from '../svg/ArrowSvg'
-import StarsSvg from '../svg/StarsSvg'
+import ArrowSvg from '../../svg/ArrowSvg'
+import StarsSvg from '../../svg/StarsSvg'
 
 interface Props {
 

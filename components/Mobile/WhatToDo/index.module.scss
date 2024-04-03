@@ -8,11 +8,6 @@
     @include mq($LPhoneWidth, max) {
         padding-bottom: 100px;
     }
-
-    @include mq($SmPhoneWidth + 1, max) {
-        top: -192px;
-        padding-bottom: 90px;
-    }
 }
 
 .bg {
