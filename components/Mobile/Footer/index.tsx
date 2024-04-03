@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './index.module.scss'
-import HearSmSvg from '../svg/HearSmSvg'
-import FooterLogoSvg from '../svg/FooterLogoSvg'
+import HearSmSvg from '@/components/svg/HearSmSvg'
+import FooterLogoSvg from '@/components/svg/FooterLogoSvg'
 
 interface Props {
 

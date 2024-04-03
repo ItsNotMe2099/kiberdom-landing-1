@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import styles from './index.module.scss'
 import { CONTACTS } from '@/types/types'
-import VectorSvg from '../svg/VectorSvg'
-import { useResize } from '../hooks/useResize'
+import VectorSvg from '../../svg/VectorSvg'
+import { useResize } from '../../hooks/useResize'
 
 interface Props {
 

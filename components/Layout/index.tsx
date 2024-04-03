@@ -1,8 +1,8 @@
 import { ReactElement } from 'react'
-import Footer from '../Footer'
 import styles from './index.module.scss'
 import { useResize } from '../hooks/useResize'
-import FooterDesktop from '../FooterDesktop'
+import FooterDesktop from '../Desktop/FooterDesktop'
+import Footer from '../Mobile/Footer'
 
 interface Props {
   children?: ReactElement | ReactElement[]

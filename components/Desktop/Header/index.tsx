@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import styles from './index.module.scss'
-import LogoSvg from '../svg/LogoSvg'
-import XSvg from '../svg/XSvg'
-import Logo2Svg from '../svg/Logo2Svg'
+import LogoSvg from '../../svg/LogoSvg'
+import XSvg from '../../svg/XSvg'
+import Logo2Svg from '../../svg/Logo2Svg'
 import classNames from 'classnames'
 
 interface Props {
