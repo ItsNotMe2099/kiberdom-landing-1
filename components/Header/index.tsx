@@ -13,7 +13,9 @@ export default function Header(props: Props) {
 
   return (
     <div className={classNames(styles.root, props.className)}>
-      <Image className={styles.bg} src={'/img/header-desktop-bg.png'} alt='' fill />
+      <Image className={styles.bg}
+        src={'/img/header-desktop-bg.png'}
+        alt='' fill />
       <div className={styles.content}>
         <LogoSvg className={styles.logo} />
         <XSvg />

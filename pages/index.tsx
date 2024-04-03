@@ -15,9 +15,9 @@ export default function IndexPage() {
     <Layout>
       <>{!isPhoneWidth && <Header />}</>
       <Top />
-      {/*<WhatToDo />
-      <LifehacksDigital />
-  <LifehacksReal />*/}
+      <>{isPhoneWidth && <WhatToDo />}</>
+      <>{isPhoneWidth && <LifehacksDigital />}</>
+      <>{isPhoneWidth && <LifehacksReal />}</>
     </Layout>
   )
 }

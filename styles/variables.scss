@@ -1,9 +1,12 @@
 // breakepoints
+$VLDesktopWidth: 1920px;
+$LDesktopWidth: 1440px;
 $DesktopWidth: 1280px;
 $MdDesktopWidth: 1200px;
-$SmDesktopWidth: 992px;
+$SmDesktopWidth: 1024px;
+$VSmDesktopWidth: 992px;
 $TabletWidth: 768px;
-$PhoneWidth: 576px;
+$PhoneWidth: 480px;
 $LPhoneWidth: 428px;
 $MPhoneWidth: 375px;
 $SmPhoneWidth: 320px;
@@ -31,13 +34,9 @@ $xl-min: 2501px;
 // Colors
 $white: #FFFFFF;
 $black: #000000;
-$red: #DB4A5A;
-$green: #00966E;
-$light-green: #BCE8DC;
-$dark: #26324A;
-$dark2: #323946;
-$blue: #3575F5;
-$light-blue: #E0EAFF;
+$yellow: #FEB44A;
+$brown: #624B48;
+$main: #F1E8DA;
 
 //ZIndex
 $zIndexHeader: 20;

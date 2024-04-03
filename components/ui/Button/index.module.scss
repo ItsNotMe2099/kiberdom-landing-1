@@ -1,0 +1,96 @@
+@import "styles/index";
+
+.root {
+  display: flex;
+  width: 246px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+  border: 1px solid $yellow;
+  color: $brown;
+  font-size: 18px;
+
+  &.disabled {}
+
+  &.fluid {
+    width: 100%;
+  }
+}
+
+//color
+
+.yellow {
+  background-color: $yellow;
+
+  &:hover {
+    background-color: #e59627;
+    border: 1px solid #e59627;
+  }
+
+  &:active {
+    background-color: #d2a15d;
+    border: 1px solid #d2a15d;
+  }
+}
+
+.transparent {
+  background: transparent;
+
+  &:hover {
+    background-color: $yellow;
+  }
+
+  &:active {
+    background-color: #d2a15d;
+    border: 1px solid #d2a15d;
+  }
+}
+
+.spinner {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinnerVisible {
+  visibility: visible;
+}
+
+.withIcon {
+
+  .text {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+  }
+}
+
+.text {
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.textHidden {
+  visibility: hidden;
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 100%;
+}

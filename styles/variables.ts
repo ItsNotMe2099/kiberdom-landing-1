@@ -1,9 +1,12 @@
 export const breakpoints = {
+  VLDesktopWidth: 1920,
+  LDesktopWidth: 1440,
   DesktopWidth: 1280,
   MdDesktopWidth: 1200,
-  SmDesktopWidth: 992,
+  SmDesktopWidth: 1024,
+  VSmDesktopWidth: 992,
   TabletWidth: 768,
-  PhoneWidth: 576,
+  PhoneWidth: 480,
   LPhoneWidth: 428,
   MPhoneWidth: 375,
   SmPhoneWidth: 320,
@@ -28,11 +31,7 @@ export const breakpoints = {
 export const colors = {
   white: '#FFFFFF',
   black: '#000000',
-  red: '#DB4A5A',
-  green: '#00966E',
-  dark: '#26324A',
-  dark2: '#323946',
-  lightGreen: '#BCE8DC',
-  blue: '#3575F5',
-  lightBlue: '#E0EAFF'
+  yellow: '#FEB44A',
+  brown: '#624B48',
+  main: '#F1E8DA'
 }
